@@ -1,0 +1,19 @@
+The Python script provided in this repository is a text analyzer or a
+Python filter. It gives you some basic stats and an advanced measure
+called Type-Token Ratio (TTR).
+
+TTR is a measure used to assess the diversity or richness of vocabulary in a text.
+TTR = (Number of unique word types) / (Total number of words).
+
+In order to use the script, put your find your text file and in a
+terminal type the following:
+#+begin_src
+  python word_stats.py my_file.txt
+#+end_src
+
+Here is a sample output from the script:
+#+begin_src
+The text has  7077  characters,  1183  words, and  52  sentences.
+The average lenght of a sentence is 22 word and standrd deviation of the length of sentence is 11.5  word
+Type-Token Ratio (TTR): 0.49 
+#+end_src
