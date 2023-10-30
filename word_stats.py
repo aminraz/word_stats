@@ -15,21 +15,21 @@ word_index = np.array(word_index)
 sent_len = word_index[1:] - word_index[:-1]  # lenght of a sentence
 sent_len = np.insert(sent_len, 0, word_index[0] + 1)
 print(
-    "The text has ",
+    "The text has",
     total_len,
-    " characters, ",
+    "characters,",
     len(word_list),
-    " words, and ",
+    "words, and",
     len(sent_len),
-    " sentences.",
+    "sentences.",
 )
 print(
-    "The average lenght of a sentence is ",
+    "The average lenght of a sentence is",
     int(np.average(sent_len)),
-    "word and standrd deviation of the length of sentence is {0:.1f}".format(
+    "word.\nStandrd deviation of the length of sentence is {0:.1f}".format(
         np.std(sent_len)
     ),
-    " word",
+    "word.",
 )
 
 # creating a frequency table for words
@@ -64,7 +64,7 @@ sent_frq_nor = np.array(sent_frq / sent_len, dtype="float16")
 
 # Type-Token Ratio (TTR)
 TTR = len(word_counts) / len(word_list)
-print("Type-Token Ratio (TTR): {0:.2f} ".format(TTR))
+print("Type-Token Ratio (TTR): {0:.2f}".format(TTR))
 print(
     """
 TTR measures the diversity or richness of vocabulary in a text.
