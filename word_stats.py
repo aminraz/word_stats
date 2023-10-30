@@ -67,7 +67,7 @@ TTR = len(word_counts) / len(word_list)
 print("Type-Token Ratio (TTR): {0:.2f} ".format(TTR))
 print(
     """
-TTR is a measure used to assess the diversity or richness of vocabulary in a text.
+TTR measures the diversity or richness of vocabulary in a text.
 TTR = (Number of unique word types) / (Total number of words)"""
 )
 # word_dict=word_counts.items()
