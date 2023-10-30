@@ -5,7 +5,7 @@ called Type-Token Ratio (TTR).
 TTR is a measure used to assess the diversity or richness of vocabulary in a text.
 TTR = (Number of unique word types) / (Total number of words).
 
-In order to use the script, put your find your text file and in a
+In order to use the script, find your text file and in a
 terminal type the following:
 #+begin_src
   python word_stats.py my_file.txt
